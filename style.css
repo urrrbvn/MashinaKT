@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.world{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/sky.png);
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden; 
+}
+.highway{
+    height: 200px;
+    width: 100%;
+    display: block;
+    background-image: url(img/1644539856_6-abrakadabra-fun-p-doroga-vid-sboku-11.png);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-repeat: repeat-x;
+
+}
+.back{
+    height: 250px;
+    width: 100%;
+    display: block;
+    background-image: url(img/Forest-PNG-Image-Free-Download.png);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+    z-index: 1;
+}
+.car{
+    width: 200px;
+    height: 70px;
+    display: block;
+    background-image: url(img/lamborghini_PNG10708.png);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    animation-duration: 7s;
+    animation-name: ride;
+}
+
+@keyframes ride {
+    from{
+        left: 0;
+    }
+    to{
+        left: 1200px;
+    }
+}
+.wheel1{
+    background-image: url(img/shina.png);
+    display: block;
+    background-size: contain;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    left: 16px;
+    right: 0;
+    bottom: 70px;
+    z-index: 2;
+    animation: wheel1;
+    animation-duration: 7s;
+}
+.wheel2{
+    background-image: url(img/shina.png);
+    display: block;
+    background-size: contain;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    left: 138px;
+    right: 0;
+    bottom: 70px;
+    z-index: 2;
+    animation: wheel2;
+    animation-duration: 7s;
+}
+@keyframes wheel1{
+    from{
+        left: 138;
+    }
+    to{
+        left: 1212px;
+        transform: rotate(1440deg);
+    }
+}
+@keyframes wheel2{
+    from{
+        left: 138;
+    }
+    to{
+        left: 1339px;
+        transform: rotate(1440deg);
+    }
+}
